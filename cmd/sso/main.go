@@ -17,6 +17,8 @@ func main() {
 	cfg := config.MustLoad()
 	// TODO: initial logger
 	logger := setupLogger(cfg.Env)
+
+	logger.Info("starting server")
 	// TODO: initial app
 	// TODO: run gRPC-server
 }
